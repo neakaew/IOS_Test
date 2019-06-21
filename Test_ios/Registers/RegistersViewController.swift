@@ -117,6 +117,7 @@ class RegistersViewController: UIViewController, UITextFieldDelegate {
             print("succress")
         } else {
             clearText()
+            checkBox.isSelected = false
             alertData(title: "E-mail incorrect", message: "Check format e-mail.")
             return
         }
