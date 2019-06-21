@@ -13,7 +13,7 @@ import SwiftyJSON
 import Alamofire
 import Mapper
 
-class DashboardViewController: UIViewController, DashboardViewProtocol {
+class DashboardViewController: UIViewController {
 
     @IBOutlet var emailLabel: UILabel!
     @IBOutlet var buyLabel: UILabel!
@@ -23,7 +23,6 @@ class DashboardViewController: UIViewController, DashboardViewProtocol {
     @IBOutlet weak var tblList: UITableView!
     @IBOutlet var viewTable: UIView!
     
-    var presenter: DashboardPresenterProtocol?
     var viewController: UIViewController?
     var refreshControl: UIRefreshControl?
     var titleArray:[String] = Array()

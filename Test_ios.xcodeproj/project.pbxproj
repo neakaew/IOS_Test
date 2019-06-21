@@ -7,28 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A3A051222BBEFA300EB998E /* RegistersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A050C22BBEFA300EB998E /* RegistersPresenter.swift */; };
-		4A3A051322BBEFA300EB998E /* RegistersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A050C22BBEFA300EB998E /* RegistersPresenter.swift */; };
-		4A3A051422BBEFA300EB998E /* RegistersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A050D22BBEFA300EB998E /* RegistersRouter.swift */; };
-		4A3A051522BBEFA300EB998E /* RegistersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A050D22BBEFA300EB998E /* RegistersRouter.swift */; };
 		4A3A051622BBEFA300EB998E /* RegistersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A050E22BBEFA300EB998E /* RegistersViewController.swift */; };
 		4A3A051722BBEFA300EB998E /* RegistersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A050E22BBEFA300EB998E /* RegistersViewController.swift */; };
-		4A3A051822BBEFA300EB998E /* RegistersProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A050F22BBEFA300EB998E /* RegistersProtocols.swift */; };
-		4A3A051922BBEFA300EB998E /* RegistersProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A050F22BBEFA300EB998E /* RegistersProtocols.swift */; };
-		4A3A051A22BBEFA300EB998E /* RegistersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A051022BBEFA300EB998E /* RegistersInteractor.swift */; };
-		4A3A051B22BBEFA300EB998E /* RegistersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A051022BBEFA300EB998E /* RegistersInteractor.swift */; };
 		4A3A051C22BBEFA300EB998E /* RegistersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A3A051122BBEFA300EB998E /* RegistersViewController.xib */; };
 		4A3A051D22BBEFA300EB998E /* RegistersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A3A051122BBEFA300EB998E /* RegistersViewController.xib */; };
-		4A3A052522BBF19800EB998E /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A051F22BBF19800EB998E /* DashboardPresenter.swift */; };
-		4A3A052622BBF19800EB998E /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A051F22BBF19800EB998E /* DashboardPresenter.swift */; };
-		4A3A052722BBF19800EB998E /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A052022BBF19800EB998E /* DashboardRouter.swift */; };
-		4A3A052822BBF19800EB998E /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A052022BBF19800EB998E /* DashboardRouter.swift */; };
 		4A3A052922BBF19800EB998E /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A052122BBF19800EB998E /* DashboardViewController.swift */; };
 		4A3A052A22BBF19800EB998E /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A052122BBF19800EB998E /* DashboardViewController.swift */; };
-		4A3A052B22BBF19800EB998E /* DashboardProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A052222BBF19800EB998E /* DashboardProtocols.swift */; };
-		4A3A052C22BBF19800EB998E /* DashboardProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A052222BBF19800EB998E /* DashboardProtocols.swift */; };
-		4A3A052D22BBF19800EB998E /* DashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A052322BBF19800EB998E /* DashboardInteractor.swift */; };
-		4A3A052E22BBF19800EB998E /* DashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A052322BBF19800EB998E /* DashboardInteractor.swift */; };
 		4A3A052F22BBF19800EB998E /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A3A052422BBF19800EB998E /* DashboardViewController.xib */; };
 		4A3A053022BBF19800EB998E /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A3A052422BBF19800EB998E /* DashboardViewController.xib */; };
 		4A80845022BBA397000BD689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A80844F22BBA397000BD689 /* AppDelegate.swift */; };
@@ -53,17 +37,9 @@
 
 /* Begin PBXFileReference section */
 		001D6EB60F7AF959D69620EF /* Pods-Test_iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_iosTests.release.xcconfig"; path = "Target Support Files/Pods-Test_iosTests/Pods-Test_iosTests.release.xcconfig"; sourceTree = "<group>"; };
-		4A3A050C22BBEFA300EB998E /* RegistersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistersPresenter.swift; sourceTree = "<group>"; };
-		4A3A050D22BBEFA300EB998E /* RegistersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistersRouter.swift; sourceTree = "<group>"; };
 		4A3A050E22BBEFA300EB998E /* RegistersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistersViewController.swift; sourceTree = "<group>"; };
-		4A3A050F22BBEFA300EB998E /* RegistersProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistersProtocols.swift; sourceTree = "<group>"; };
-		4A3A051022BBEFA300EB998E /* RegistersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistersInteractor.swift; sourceTree = "<group>"; };
 		4A3A051122BBEFA300EB998E /* RegistersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistersViewController.xib; sourceTree = "<group>"; };
-		4A3A051F22BBF19800EB998E /* DashboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
-		4A3A052022BBF19800EB998E /* DashboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
 		4A3A052122BBF19800EB998E /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
-		4A3A052222BBF19800EB998E /* DashboardProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardProtocols.swift; sourceTree = "<group>"; };
-		4A3A052322BBF19800EB998E /* DashboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardInteractor.swift; sourceTree = "<group>"; };
 		4A3A052422BBF19800EB998E /* DashboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
 		4A80844C22BBA397000BD689 /* Test_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A80844F22BBA397000BD689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,11 +81,7 @@
 		4A3A050B22BBEF7D00EB998E /* Registers */ = {
 			isa = PBXGroup;
 			children = (
-				4A3A050C22BBEFA300EB998E /* RegistersPresenter.swift */,
-				4A3A050D22BBEFA300EB998E /* RegistersRouter.swift */,
 				4A3A050E22BBEFA300EB998E /* RegistersViewController.swift */,
-				4A3A050F22BBEFA300EB998E /* RegistersProtocols.swift */,
-				4A3A051022BBEFA300EB998E /* RegistersInteractor.swift */,
 				4A3A051122BBEFA300EB998E /* RegistersViewController.xib */,
 			);
 			path = Registers;
@@ -118,11 +90,7 @@
 		4A3A051E22BBF18100EB998E /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				4A3A051F22BBF19800EB998E /* DashboardPresenter.swift */,
-				4A3A052022BBF19800EB998E /* DashboardRouter.swift */,
 				4A3A052122BBF19800EB998E /* DashboardViewController.swift */,
-				4A3A052222BBF19800EB998E /* DashboardProtocols.swift */,
-				4A3A052322BBF19800EB998E /* DashboardInteractor.swift */,
 				4A3A052422BBF19800EB998E /* DashboardViewController.xib */,
 			);
 			path = Dashboard;
@@ -364,18 +332,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A3A051822BBEFA300EB998E /* RegistersProtocols.swift in Sources */,
-				4A3A051A22BBEFA300EB998E /* RegistersInteractor.swift in Sources */,
-				4A3A051222BBEFA300EB998E /* RegistersPresenter.swift in Sources */,
-				4A3A052B22BBF19800EB998E /* DashboardProtocols.swift in Sources */,
-				4A3A052522BBF19800EB998E /* DashboardPresenter.swift in Sources */,
-				4A3A051422BBEFA300EB998E /* RegistersRouter.swift in Sources */,
 				4A3A051622BBEFA300EB998E /* RegistersViewController.swift in Sources */,
 				4A80845222BBA397000BD689 /* ViewController.swift in Sources */,
 				4A3A052922BBF19800EB998E /* DashboardViewController.swift in Sources */,
-				4A3A052722BBF19800EB998E /* DashboardRouter.swift in Sources */,
 				4A80845022BBA397000BD689 /* AppDelegate.swift in Sources */,
-				4A3A052D22BBF19800EB998E /* DashboardInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,16 +343,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A3A051922BBEFA300EB998E /* RegistersProtocols.swift in Sources */,
 				4A3A052A22BBF19800EB998E /* DashboardViewController.swift in Sources */,
-				4A3A052822BBF19800EB998E /* DashboardRouter.swift in Sources */,
-				4A3A051B22BBEFA300EB998E /* RegistersInteractor.swift in Sources */,
 				4A3A051722BBEFA300EB998E /* RegistersViewController.swift in Sources */,
-				4A3A051522BBEFA300EB998E /* RegistersRouter.swift in Sources */,
-				4A3A052C22BBF19800EB998E /* DashboardProtocols.swift in Sources */,
-				4A3A052E22BBF19800EB998E /* DashboardInteractor.swift in Sources */,
-				4A3A052622BBF19800EB998E /* DashboardPresenter.swift in Sources */,
-				4A3A051322BBEFA300EB998E /* RegistersPresenter.swift in Sources */,
 				4A80846522BBA399000BD689 /* Test_iosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

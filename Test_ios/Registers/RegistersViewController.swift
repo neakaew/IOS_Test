@@ -12,9 +12,7 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 
-class RegistersViewController: UIViewController, RegistersViewProtocol, UITextFieldDelegate {
-
-	var presenter: RegistersPresenterProtocol?
+class RegistersViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var emailTextFiled: UITextField!
     @IBOutlet var checkBox: UIButton!
