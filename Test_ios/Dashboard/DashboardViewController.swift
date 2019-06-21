@@ -15,6 +15,7 @@ import Mapper
 
 class DashboardViewController: UIViewController, DashboardViewProtocol {
 
+    @IBOutlet var emailLabel: UILabel!
     @IBOutlet var buyLabel: UILabel!
     @IBOutlet var sellLabel: UILabel!
     @IBOutlet var spotPriceLabel: UILabel!
@@ -26,6 +27,7 @@ class DashboardViewController: UIViewController, DashboardViewProtocol {
     var viewController: UIViewController?
     var refreshControl: UIRefreshControl?
     var titleArray:[String] = Array()
+    var textEmail: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +37,7 @@ class DashboardViewController: UIViewController, DashboardViewProtocol {
     }
     
     func setUpView() {
+        emailLabel.text = textEmail
         viewTable.setLayerView()
     }
     

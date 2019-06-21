@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DashboardViewController" customModule="Test_ios" customModuleProvider="target">
             <connections>
                 <outlet property="buyLabel" destination="tX1-2E-weV" id="ee3-Oe-xMr"/>
+                <outlet property="emailLabel" destination="B4O-gf-jMF" id="wkX-UL-zWS"/>
                 <outlet property="sellLabel" destination="QLM-3O-oyG" id="hnY-O0-QwZ"/>
                 <outlet property="spotPriceLabel" destination="xBq-ly-VrO" id="tBw-qP-20t"/>
                 <outlet property="tblList" destination="cJW-Zr-i9r" id="NhU-KL-8SR"/>
@@ -81,7 +82,7 @@
                     <size key="shadowOffset" width="5" height="-1"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1T-5s-vjV">
-                    <rect key="frame" x="162.5" y="77" width="50" height="50"/>
+                    <rect key="frame" x="309" y="96" width="50" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="OlR-zC-A7D"/>
                         <constraint firstAttribute="width" constant="50" id="Zax-NV-GQd"/>
@@ -107,18 +108,32 @@
                         <constraint firstItem="cJW-Zr-i9r" firstAttribute="leading" secondItem="Fzb-uk-Pet" secondAttribute="leading" id="jdF-wx-DKa"/>
                     </constraints>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4O-gf-jMF">
+                    <rect key="frame" x="16" y="108" width="277" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="bhj-1G-Nrg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="5" height="-1"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="0.98461021739999999" green="0.99193829300000003" blue="0.92830067890000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
+                <constraint firstItem="B4O-gf-jMF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="0Gg-Nb-hrY"/>
                 <constraint firstItem="QLM-3O-oyG" firstAttribute="top" secondItem="tX1-2E-weV" secondAttribute="bottom" constant="16" id="0qx-d8-bg5"/>
                 <constraint firstAttribute="bottom" secondItem="xmh-mc-zzu" secondAttribute="bottom" constant="20" id="39C-CS-h0P"/>
                 <constraint firstAttribute="trailing" secondItem="u5P-JJ-JoI" secondAttribute="trailing" constant="16" id="5qb-Fj-2Xo"/>
                 <constraint firstItem="QLM-3O-oyG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="7Wq-Hd-DA0"/>
-                <constraint firstItem="N1T-5s-vjV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7vB-u8-FjZ"/>
+                <constraint firstItem="N1T-5s-vjV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="146.5" id="7vB-u8-FjZ"/>
+                <constraint firstItem="N1T-5s-vjV" firstAttribute="leading" secondItem="B4O-gf-jMF" secondAttribute="trailing" constant="16" id="Bbm-XZ-buq"/>
+                <constraint firstItem="tX1-2E-weV" firstAttribute="top" secondItem="B4O-gf-jMF" secondAttribute="bottom" constant="16" id="Eh6-1l-edk"/>
                 <constraint firstAttribute="trailing" secondItem="QLM-3O-oyG" secondAttribute="trailing" constant="16" id="GmZ-yL-ndP"/>
                 <constraint firstItem="Fzb-uk-Pet" firstAttribute="top" secondItem="u5P-JJ-JoI" secondAttribute="bottom" constant="16" id="LWj-9A-kL1"/>
-                <constraint firstItem="N1T-5s-vjV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="77" id="QZ8-uj-lBC"/>
-                <constraint firstItem="tX1-2E-weV" firstAttribute="top" secondItem="N1T-5s-vjV" secondAttribute="bottom" constant="27" id="SIP-fc-TqN"/>
+                <constraint firstItem="N1T-5s-vjV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="96" id="QZ8-uj-lBC"/>
+                <constraint firstItem="tX1-2E-weV" firstAttribute="top" secondItem="N1T-5s-vjV" secondAttribute="bottom" constant="8" id="SIP-fc-TqN"/>
                 <constraint firstItem="xmh-mc-zzu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Vq0-u3-c2d"/>
                 <constraint firstAttribute="trailing" secondItem="Fzb-uk-Pet" secondAttribute="trailing" constant="16" id="ZsC-Om-zr6"/>
                 <constraint firstItem="u5P-JJ-JoI" firstAttribute="top" secondItem="xBq-ly-VrO" secondAttribute="bottom" constant="16" id="aAp-co-YwV"/>

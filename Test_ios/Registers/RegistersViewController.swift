@@ -12,7 +12,7 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 
-class RegistersViewController: UIViewController, RegistersViewProtocol {
+class RegistersViewController: UIViewController, RegistersViewProtocol, UITextFieldDelegate {
 
 	var presenter: RegistersPresenterProtocol?
     
@@ -20,6 +20,7 @@ class RegistersViewController: UIViewController, RegistersViewProtocol {
     @IBOutlet var checkBox: UIButton!
     @IBOutlet var viewEmail: UIView!
     @IBOutlet var viewCheckBox: UIView!
+    @IBOutlet var confirmButton: UIButton!
     
     var selectDataTnc: Bool = false
 
@@ -31,12 +32,24 @@ class RegistersViewController: UIViewController, RegistersViewProtocol {
     }
     
     func setupTextfield() {
+        emailTextFiled.delegate = self
         emailTextFiled.placeholder = "Please enter e-mail."
     }
     
     func setUpView() {
+        setUpButton()
         viewEmail.setLayerView()
         viewCheckBox.setLayerView()
+    }
+    
+    func setUpButton() {
+//        confirmButton.isEnabled = true
+        confirmButton.backgroundColor = .gray
+        confirmButton.setTitle("Confirm", for: .normal)
+        confirmButton.titleLabel?.font = UIFont(name:"Courier New", size:15)
+        confirmButton.setTitleColor(UIColor.white, for: .normal)
+        confirmButton.layer.cornerRadius = 8
+        confirmButton.layer.shadowRadius = 8
     }
     
     func setDismissKeyboard() {
@@ -46,6 +59,11 @@ class RegistersViewController: UIViewController, RegistersViewProtocol {
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 
     func register(email: String, uuid: String, data: String, tnc: Bool) {
@@ -61,9 +79,9 @@ class RegistersViewController: UIViewController, RegistersViewProtocol {
                     switch response.result {
                     case .success(let value): // Success is clearText and Show Alert
                         print(value)
-                        self.clearText()
                         self.checkBox.isSelected = false
                         self.nextPage()
+                        self.clearText()
                     case .failure(let error):
                         print(error)
                     }
@@ -73,6 +91,7 @@ class RegistersViewController: UIViewController, RegistersViewProtocol {
     
     func nextPage() {
         let myViewController = DashboardViewController(nibName: "DashboardViewController", bundle: nil)
+        myViewController.textEmail = emailTextFiled.text ?? ""
         self.present(myViewController, animated: true, completion: nil)
     }
     
@@ -101,6 +120,7 @@ class RegistersViewController: UIViewController, RegistersViewProtocol {
         } else {
             clearText()
             alertData(title: "E-mail incorrect", message: "Check format e-mail.")
+            return
         }
         
         let selectData = randomData(length: 15)
