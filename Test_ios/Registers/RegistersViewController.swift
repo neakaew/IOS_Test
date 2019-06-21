@@ -18,16 +18,34 @@ class RegistersViewController: UIViewController, RegistersViewProtocol {
     
     @IBOutlet var emailTextFiled: UITextField!
     @IBOutlet var checkBox: UIButton!
+    @IBOutlet var viewEmail: UIView!
+    @IBOutlet var viewCheckBox: UIView!
     
     var selectDataTnc: Bool = false
 
 	override func viewDidLoad() {
         super.viewDidLoad()
+        setDismissKeyboard()
         setupTextfield()
+        setUpView()
     }
     
     func setupTextfield() {
         emailTextFiled.placeholder = "Please enter e-mail."
+    }
+    
+    func setUpView() {
+        viewEmail.setLayerView()
+        viewCheckBox.setLayerView()
+    }
+    
+    func setDismissKeyboard() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 
     func register(email: String, uuid: String, data: String, tnc: Bool) {
@@ -45,9 +63,7 @@ class RegistersViewController: UIViewController, RegistersViewProtocol {
                         print(value)
                         self.clearText()
                         self.checkBox.isSelected = false
-//                        self.alertData(title: "E-mail correct", message: "Thank You!")
                         self.nextPage()
-                        
                     case .failure(let error):
                         print(error)
                     }
@@ -122,3 +138,11 @@ class RegistersViewController: UIViewController, RegistersViewProtocol {
     }
 }
 
+extension UIView {
+    func setLayerView() {
+        layer.shadowColor = UIColor.gray.cgColor
+        layer.shadowOpacity = 0.3
+        layer.shadowOffset = CGSize.zero
+        layer.shadowRadius = 6
+    }
+}

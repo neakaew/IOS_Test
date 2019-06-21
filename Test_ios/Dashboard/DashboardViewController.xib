@@ -14,6 +14,7 @@
                 <outlet property="buyLabel" destination="tX1-2E-weV" id="ee3-Oe-xMr"/>
                 <outlet property="sellLabel" destination="QLM-3O-oyG" id="hnY-O0-QwZ"/>
                 <outlet property="spotPriceLabel" destination="xBq-ly-VrO" id="tBw-qP-20t"/>
+                <outlet property="tblList" destination="cJW-Zr-i9r" id="NhU-KL-8SR"/>
                 <outlet property="timestampLabel" destination="u5P-JJ-JoI" id="W5P-Pu-0dH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -24,7 +25,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmh-mc-zzu">
-                    <rect key="frame" x="155" y="542" width="65" height="65"/>
+                    <rect key="frame" x="155" y="582" width="65" height="65"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="65" id="cog-SV-JMx"/>
                         <constraint firstAttribute="width" constant="65" id="zQz-ck-i1X"/>
@@ -89,29 +90,42 @@
                         <action selector="refreshAction:" destination="-1" eventType="touchUpInside" id="hhK-uL-DLz"/>
                     </connections>
                 </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cJW-Zr-i9r">
+                    <rect key="frame" x="16" y="338" width="343" height="228"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="0.98461021739999999" green="0.99193829300000003" blue="0.92830067890000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="QLM-3O-oyG" firstAttribute="top" secondItem="tX1-2E-weV" secondAttribute="bottom" constant="16" id="0qx-d8-bg5"/>
-                <constraint firstItem="xmh-mc-zzu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="155" id="2yI-fe-YTM"/>
-                <constraint firstAttribute="bottom" secondItem="xmh-mc-zzu" secondAttribute="bottom" constant="60" id="39C-CS-h0P"/>
+                <constraint firstAttribute="bottom" secondItem="xmh-mc-zzu" secondAttribute="bottom" constant="20" id="39C-CS-h0P"/>
                 <constraint firstAttribute="trailing" secondItem="u5P-JJ-JoI" secondAttribute="trailing" constant="16" id="5qb-Fj-2Xo"/>
                 <constraint firstItem="QLM-3O-oyG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="7Wq-Hd-DA0"/>
                 <constraint firstItem="N1T-5s-vjV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7vB-u8-FjZ"/>
+                <constraint firstAttribute="trailing" secondItem="cJW-Zr-i9r" secondAttribute="trailing" constant="16" id="D2z-GV-OoM"/>
+                <constraint firstItem="cJW-Zr-i9r" firstAttribute="top" secondItem="u5P-JJ-JoI" secondAttribute="bottom" constant="16" id="FhM-yP-GVk"/>
                 <constraint firstAttribute="trailing" secondItem="QLM-3O-oyG" secondAttribute="trailing" constant="16" id="GmZ-yL-ndP"/>
-                <constraint firstAttribute="trailing" secondItem="xmh-mc-zzu" secondAttribute="trailing" constant="155" id="LSM-1y-pRs"/>
+                <constraint firstItem="cJW-Zr-i9r" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="JnM-Qc-OOr"/>
                 <constraint firstItem="N1T-5s-vjV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="77" id="QZ8-uj-lBC"/>
                 <constraint firstItem="tX1-2E-weV" firstAttribute="top" secondItem="N1T-5s-vjV" secondAttribute="bottom" constant="27" id="SIP-fc-TqN"/>
+                <constraint firstItem="xmh-mc-zzu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Vq0-u3-c2d"/>
                 <constraint firstItem="u5P-JJ-JoI" firstAttribute="top" secondItem="xBq-ly-VrO" secondAttribute="bottom" constant="16" id="aAp-co-YwV"/>
                 <constraint firstAttribute="trailing" secondItem="xBq-ly-VrO" secondAttribute="trailing" constant="16" id="agC-b4-kgV"/>
                 <constraint firstItem="u5P-JJ-JoI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="f7e-bw-M44"/>
                 <constraint firstItem="xBq-ly-VrO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="gcV-GE-K5k"/>
                 <constraint firstItem="xBq-ly-VrO" firstAttribute="top" secondItem="QLM-3O-oyG" secondAttribute="bottom" constant="16" id="irR-3B-4io"/>
                 <constraint firstAttribute="trailing" secondItem="tX1-2E-weV" secondAttribute="trailing" constant="16" id="lHA-Cm-eKG"/>
+                <constraint firstItem="xmh-mc-zzu" firstAttribute="top" secondItem="cJW-Zr-i9r" secondAttribute="bottom" constant="16" id="rg1-yd-SjU"/>
                 <constraint firstItem="tX1-2E-weV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="uys-mo-f6B"/>
             </constraints>
             <point key="canvasLocation" x="53.600000000000001" y="117.39130434782609"/>
         </view>
+        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qyk-xM-4SB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="294" y="242"/>
+        </tableView>
     </objects>
     <resources>
         <image name="back" width="512" height="512"/>

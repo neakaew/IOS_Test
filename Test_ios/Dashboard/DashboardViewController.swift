@@ -22,10 +22,29 @@ class DashboardViewController: UIViewController, DashboardViewProtocol {
     @IBOutlet var sellLabel: UILabel!
     @IBOutlet var spotPriceLabel: UILabel!
     @IBOutlet var timestampLabel: UILabel!
+    @IBOutlet weak var tblList: UITableView!
+    
+    var refreshControl: UIRefreshControl?
+    var titleArray:[String] = Array()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchSpotPrice()
+        addRefreshControl()
+    }
+    
+    func addRefreshControl() {
+        
+        refreshControl = UIRefreshControl()
+        refreshControl?.tintColor = UIColor.red
+        refreshControl?.addTarget(self, action: #selector(refreshList), for: .valueChanged)
+        tblList.addSubview(refreshControl!)
+    }
+    
+    @objc func refreshList() {
+        fetchSpotPrice()
+        refreshControl?.endRefreshing()
+        tblList.reloadData()
     }
     
     @IBAction func backToRegister(_ sender: Any) {
@@ -75,6 +94,12 @@ class DashboardViewController: UIViewController, DashboardViewProtocol {
                         self.spotPriceLabel.text = spotPriceString
                         
                         self.timestampLabel.text = timestamp as? String ?? "Not Data!"
+                        
+                        self.titleArray.append(timestamp as! String)
+                        self.tblList.tableFooterView = UIView.init(frame: .zero)
+                        self.tblList.dataSource = self
+                        self.tblList.reloadData()
+//                        addRefreshControl()
                     }
                     return
                 }
@@ -84,5 +109,28 @@ class DashboardViewController: UIViewController, DashboardViewProtocol {
     
     @IBAction func refreshAction(_ sender: Any) {
         fetchSpotPrice()
+//        tblList.reloadData()
+    }
+}
+
+extension DashboardViewController: UITableViewDataSource {
+    //MARK:- UITableViewDataSource
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return titleArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        var cell = tableView.dequeueReusableCell(withIdentifier: "listcell")
+        if cell == nil {
+            cell = UITableViewCell(style: .default, reuseIdentifier: "listcell")
+        }
+        cell?.textLabel?.text = titleArray[indexPath.row]
+        cell?.textLabel?.font = UIFont(name:"Courier New", size:15)
+        return cell!
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 }
