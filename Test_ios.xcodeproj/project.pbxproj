@@ -3,17 +3,40 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A3A051222BBEFA300EB998E /* RegistersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A050C22BBEFA300EB998E /* RegistersPresenter.swift */; };
+		4A3A051322BBEFA300EB998E /* RegistersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A050C22BBEFA300EB998E /* RegistersPresenter.swift */; };
+		4A3A051422BBEFA300EB998E /* RegistersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A050D22BBEFA300EB998E /* RegistersRouter.swift */; };
+		4A3A051522BBEFA300EB998E /* RegistersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A050D22BBEFA300EB998E /* RegistersRouter.swift */; };
+		4A3A051622BBEFA300EB998E /* RegistersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A050E22BBEFA300EB998E /* RegistersViewController.swift */; };
+		4A3A051722BBEFA300EB998E /* RegistersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A050E22BBEFA300EB998E /* RegistersViewController.swift */; };
+		4A3A051822BBEFA300EB998E /* RegistersProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A050F22BBEFA300EB998E /* RegistersProtocols.swift */; };
+		4A3A051922BBEFA300EB998E /* RegistersProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A050F22BBEFA300EB998E /* RegistersProtocols.swift */; };
+		4A3A051A22BBEFA300EB998E /* RegistersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A051022BBEFA300EB998E /* RegistersInteractor.swift */; };
+		4A3A051B22BBEFA300EB998E /* RegistersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A051022BBEFA300EB998E /* RegistersInteractor.swift */; };
+		4A3A051C22BBEFA300EB998E /* RegistersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A3A051122BBEFA300EB998E /* RegistersViewController.xib */; };
+		4A3A051D22BBEFA300EB998E /* RegistersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A3A051122BBEFA300EB998E /* RegistersViewController.xib */; };
+		4A3A052522BBF19800EB998E /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A051F22BBF19800EB998E /* DashboardPresenter.swift */; };
+		4A3A052622BBF19800EB998E /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A051F22BBF19800EB998E /* DashboardPresenter.swift */; };
+		4A3A052722BBF19800EB998E /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A052022BBF19800EB998E /* DashboardRouter.swift */; };
+		4A3A052822BBF19800EB998E /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A052022BBF19800EB998E /* DashboardRouter.swift */; };
+		4A3A052922BBF19800EB998E /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A052122BBF19800EB998E /* DashboardViewController.swift */; };
+		4A3A052A22BBF19800EB998E /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A052122BBF19800EB998E /* DashboardViewController.swift */; };
+		4A3A052B22BBF19800EB998E /* DashboardProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A052222BBF19800EB998E /* DashboardProtocols.swift */; };
+		4A3A052C22BBF19800EB998E /* DashboardProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A052222BBF19800EB998E /* DashboardProtocols.swift */; };
+		4A3A052D22BBF19800EB998E /* DashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A052322BBF19800EB998E /* DashboardInteractor.swift */; };
+		4A3A052E22BBF19800EB998E /* DashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A052322BBF19800EB998E /* DashboardInteractor.swift */; };
+		4A3A052F22BBF19800EB998E /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A3A052422BBF19800EB998E /* DashboardViewController.xib */; };
+		4A3A053022BBF19800EB998E /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A3A052422BBF19800EB998E /* DashboardViewController.xib */; };
 		4A80845022BBA397000BD689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A80844F22BBA397000BD689 /* AppDelegate.swift */; };
 		4A80845222BBA397000BD689 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A80845122BBA397000BD689 /* ViewController.swift */; };
 		4A80845522BBA397000BD689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A80845322BBA397000BD689 /* Main.storyboard */; };
 		4A80845722BBA399000BD689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A80845622BBA399000BD689 /* Assets.xcassets */; };
 		4A80845A22BBA399000BD689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A80845822BBA399000BD689 /* LaunchScreen.storyboard */; };
 		4A80846522BBA399000BD689 /* Test_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A80846422BBA399000BD689 /* Test_iosTests.swift */; };
-		4A80847022BBA743000BD689 /* checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A80846F22BBA742000BD689 /* checkbox.png */; };
 		B4B6FCDF19C6076F528F9155 /* Pods_Test_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2362C7B65D18FC86CEE0750 /* Pods_Test_ios.framework */; };
 		C5EF4D29D0E311A8421B4008 /* Pods_Test_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0948B573AD038738CA5CDC /* Pods_Test_iosTests.framework */; };
 /* End PBXBuildFile section */
@@ -30,6 +53,18 @@
 
 /* Begin PBXFileReference section */
 		001D6EB60F7AF959D69620EF /* Pods-Test_iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_iosTests.release.xcconfig"; path = "Target Support Files/Pods-Test_iosTests/Pods-Test_iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		4A3A050C22BBEFA300EB998E /* RegistersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistersPresenter.swift; sourceTree = "<group>"; };
+		4A3A050D22BBEFA300EB998E /* RegistersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistersRouter.swift; sourceTree = "<group>"; };
+		4A3A050E22BBEFA300EB998E /* RegistersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistersViewController.swift; sourceTree = "<group>"; };
+		4A3A050F22BBEFA300EB998E /* RegistersProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistersProtocols.swift; sourceTree = "<group>"; };
+		4A3A051022BBEFA300EB998E /* RegistersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistersInteractor.swift; sourceTree = "<group>"; };
+		4A3A051122BBEFA300EB998E /* RegistersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistersViewController.xib; sourceTree = "<group>"; };
+		4A3A051F22BBF19800EB998E /* DashboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
+		4A3A052022BBF19800EB998E /* DashboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
+		4A3A052122BBF19800EB998E /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		4A3A052222BBF19800EB998E /* DashboardProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardProtocols.swift; sourceTree = "<group>"; };
+		4A3A052322BBF19800EB998E /* DashboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardInteractor.swift; sourceTree = "<group>"; };
+		4A3A052422BBF19800EB998E /* DashboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
 		4A80844C22BBA397000BD689 /* Test_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A80844F22BBA397000BD689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A80845122BBA397000BD689 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +75,6 @@
 		4A80846022BBA399000BD689 /* Test_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A80846422BBA399000BD689 /* Test_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_iosTests.swift; sourceTree = "<group>"; };
 		4A80846622BBA399000BD689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A80846F22BBA742000BD689 /* checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox.png; sourceTree = "<group>"; };
 		7641126AEA1886F433534853 /* Pods-Test_iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_iosTests.debug.xcconfig"; path = "Target Support Files/Pods-Test_iosTests/Pods-Test_iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC2828842D3F2010A29CEEEF /* Pods-Test_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_ios.release.xcconfig"; path = "Target Support Files/Pods-Test_ios/Pods-Test_ios.release.xcconfig"; sourceTree = "<group>"; };
 		AC8209A2386B8BB2E4FA46B4 /* Pods-Test_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_ios.debug.xcconfig"; path = "Target Support Files/Pods-Test_ios/Pods-Test_ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +102,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A3A050B22BBEF7D00EB998E /* Registers */ = {
+			isa = PBXGroup;
+			children = (
+				4A3A050C22BBEFA300EB998E /* RegistersPresenter.swift */,
+				4A3A050D22BBEFA300EB998E /* RegistersRouter.swift */,
+				4A3A050E22BBEFA300EB998E /* RegistersViewController.swift */,
+				4A3A050F22BBEFA300EB998E /* RegistersProtocols.swift */,
+				4A3A051022BBEFA300EB998E /* RegistersInteractor.swift */,
+				4A3A051122BBEFA300EB998E /* RegistersViewController.xib */,
+			);
+			path = Registers;
+			sourceTree = "<group>";
+		};
+		4A3A051E22BBF18100EB998E /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				4A3A051F22BBF19800EB998E /* DashboardPresenter.swift */,
+				4A3A052022BBF19800EB998E /* DashboardRouter.swift */,
+				4A3A052122BBF19800EB998E /* DashboardViewController.swift */,
+				4A3A052222BBF19800EB998E /* DashboardProtocols.swift */,
+				4A3A052322BBF19800EB998E /* DashboardInteractor.swift */,
+				4A3A052422BBF19800EB998E /* DashboardViewController.xib */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
 		4A80844322BBA397000BD689 = {
 			isa = PBXGroup;
 			children = (
@@ -91,11 +151,12 @@
 		4A80844E22BBA397000BD689 /* Test_ios */ = {
 			isa = PBXGroup;
 			children = (
+				4A3A051E22BBF18100EB998E /* Dashboard */,
+				4A3A050B22BBEF7D00EB998E /* Registers */,
 				4A80844F22BBA397000BD689 /* AppDelegate.swift */,
 				4A80845122BBA397000BD689 /* ViewController.swift */,
 				4A80845322BBA397000BD689 /* Main.storyboard */,
 				4A80845622BBA399000BD689 /* Assets.xcassets */,
-				4A80846F22BBA742000BD689 /* checkbox.png */,
 				4A80845822BBA399000BD689 /* LaunchScreen.storyboard */,
 				4A80845B22BBA399000BD689 /* Info.plist */,
 			);
@@ -119,7 +180,6 @@
 				7641126AEA1886F433534853 /* Pods-Test_iosTests.debug.xcconfig */,
 				001D6EB60F7AF959D69620EF /* Pods-Test_iosTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -218,8 +278,9 @@
 			files = (
 				4A80845A22BBA399000BD689 /* LaunchScreen.storyboard in Resources */,
 				4A80845722BBA399000BD689 /* Assets.xcassets in Resources */,
-				4A80847022BBA743000BD689 /* checkbox.png in Resources */,
+				4A3A051C22BBEFA300EB998E /* RegistersViewController.xib in Resources */,
 				4A80845522BBA397000BD689 /* Main.storyboard in Resources */,
+				4A3A052F22BBF19800EB998E /* DashboardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +288,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A3A051D22BBEFA300EB998E /* RegistersViewController.xib in Resources */,
+				4A3A053022BBF19800EB998E /* DashboardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,8 +364,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A3A051822BBEFA300EB998E /* RegistersProtocols.swift in Sources */,
+				4A3A051A22BBEFA300EB998E /* RegistersInteractor.swift in Sources */,
+				4A3A051222BBEFA300EB998E /* RegistersPresenter.swift in Sources */,
+				4A3A052B22BBF19800EB998E /* DashboardProtocols.swift in Sources */,
+				4A3A052522BBF19800EB998E /* DashboardPresenter.swift in Sources */,
+				4A3A051422BBEFA300EB998E /* RegistersRouter.swift in Sources */,
+				4A3A051622BBEFA300EB998E /* RegistersViewController.swift in Sources */,
 				4A80845222BBA397000BD689 /* ViewController.swift in Sources */,
+				4A3A052922BBF19800EB998E /* DashboardViewController.swift in Sources */,
+				4A3A052722BBF19800EB998E /* DashboardRouter.swift in Sources */,
 				4A80845022BBA397000BD689 /* AppDelegate.swift in Sources */,
+				4A3A052D22BBF19800EB998E /* DashboardInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +383,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A3A051922BBEFA300EB998E /* RegistersProtocols.swift in Sources */,
+				4A3A052A22BBF19800EB998E /* DashboardViewController.swift in Sources */,
+				4A3A052822BBF19800EB998E /* DashboardRouter.swift in Sources */,
+				4A3A051B22BBEFA300EB998E /* RegistersInteractor.swift in Sources */,
+				4A3A051722BBEFA300EB998E /* RegistersViewController.swift in Sources */,
+				4A3A051522BBEFA300EB998E /* RegistersRouter.swift in Sources */,
+				4A3A052C22BBF19800EB998E /* DashboardProtocols.swift in Sources */,
+				4A3A052E22BBF19800EB998E /* DashboardInteractor.swift in Sources */,
+				4A3A052622BBF19800EB998E /* DashboardPresenter.swift in Sources */,
+				4A3A051322BBEFA300EB998E /* RegistersPresenter.swift in Sources */,
 				4A80846522BBA399000BD689 /* Test_iosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

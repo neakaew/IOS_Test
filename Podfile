@@ -13,6 +13,8 @@ target 'Test_ios' do
   end
 
 pod 'SwiftyJSON'
-pod 'Alamofire','~> 4.5'  
+pod 'Alamofire','~> 4.5'
+pod 'ObjectMapper', '~> 3.4'
+pod 'ModelMapper'
 
 end
