@@ -15,15 +15,15 @@ import Mapper
 
 class DashboardViewController: UIViewController, DashboardViewProtocol {
 
-	var presenter: DashboardPresenterProtocol?
-    var viewController: UIViewController?
-
     @IBOutlet var buyLabel: UILabel!
     @IBOutlet var sellLabel: UILabel!
     @IBOutlet var spotPriceLabel: UILabel!
     @IBOutlet var timestampLabel: UILabel!
     @IBOutlet weak var tblList: UITableView!
+    @IBOutlet var viewTable: UIView!
     
+    var presenter: DashboardPresenterProtocol?
+    var viewController: UIViewController?
     var refreshControl: UIRefreshControl?
     var titleArray:[String] = Array()
     
@@ -31,10 +31,14 @@ class DashboardViewController: UIViewController, DashboardViewProtocol {
         super.viewDidLoad()
         fetchSpotPrice()
         addRefreshControl()
+        setUpView()
+    }
+    
+    func setUpView() {
+        viewTable.setLayerView()
     }
     
     func addRefreshControl() {
-        
         refreshControl = UIRefreshControl()
         refreshControl?.tintColor = UIColor.red
         refreshControl?.addTarget(self, action: #selector(refreshList), for: .valueChanged)
@@ -99,7 +103,6 @@ class DashboardViewController: UIViewController, DashboardViewProtocol {
                         self.tblList.tableFooterView = UIView.init(frame: .zero)
                         self.tblList.dataSource = self
                         self.tblList.reloadData()
-//                        addRefreshControl()
                     }
                     return
                 }
@@ -109,12 +112,10 @@ class DashboardViewController: UIViewController, DashboardViewProtocol {
     
     @IBAction func refreshAction(_ sender: Any) {
         fetchSpotPrice()
-//        tblList.reloadData()
     }
 }
 
 extension DashboardViewController: UITableViewDataSource {
-    //MARK:- UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return titleArray.count
     }
@@ -128,9 +129,5 @@ extension DashboardViewController: UITableViewDataSource {
         cell?.textLabel?.text = titleArray[indexPath.row]
         cell?.textLabel?.font = UIFont(name:"Courier New", size:15)
         return cell!
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }

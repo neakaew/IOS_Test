@@ -17,6 +17,7 @@
                 <outlet property="tblList" destination="cJW-Zr-i9r" id="NhU-KL-8SR"/>
                 <outlet property="timestampLabel" destination="u5P-JJ-JoI" id="W5P-Pu-0dH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewTable" destination="Fzb-uk-Pet" id="vNR-mj-cTU"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -90,10 +91,22 @@
                         <action selector="refreshAction:" destination="-1" eventType="touchUpInside" id="hhK-uL-DLz"/>
                     </connections>
                 </button>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cJW-Zr-i9r">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fzb-uk-Pet">
                     <rect key="frame" x="16" y="338" width="343" height="228"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cJW-Zr-i9r">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="228"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </tableView>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="cJW-Zr-i9r" secondAttribute="bottom" id="Dkh-qJ-OFd"/>
+                        <constraint firstAttribute="trailing" secondItem="cJW-Zr-i9r" secondAttribute="trailing" id="TJf-kv-zeg"/>
+                        <constraint firstItem="cJW-Zr-i9r" firstAttribute="top" secondItem="Fzb-uk-Pet" secondAttribute="top" id="coA-lx-rmB"/>
+                        <constraint firstItem="cJW-Zr-i9r" firstAttribute="leading" secondItem="Fzb-uk-Pet" secondAttribute="leading" id="jdF-wx-DKa"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.98461021739999999" green="0.99193829300000003" blue="0.92830067890000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
@@ -102,21 +115,21 @@
                 <constraint firstAttribute="trailing" secondItem="u5P-JJ-JoI" secondAttribute="trailing" constant="16" id="5qb-Fj-2Xo"/>
                 <constraint firstItem="QLM-3O-oyG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="7Wq-Hd-DA0"/>
                 <constraint firstItem="N1T-5s-vjV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7vB-u8-FjZ"/>
-                <constraint firstAttribute="trailing" secondItem="cJW-Zr-i9r" secondAttribute="trailing" constant="16" id="D2z-GV-OoM"/>
-                <constraint firstItem="cJW-Zr-i9r" firstAttribute="top" secondItem="u5P-JJ-JoI" secondAttribute="bottom" constant="16" id="FhM-yP-GVk"/>
                 <constraint firstAttribute="trailing" secondItem="QLM-3O-oyG" secondAttribute="trailing" constant="16" id="GmZ-yL-ndP"/>
-                <constraint firstItem="cJW-Zr-i9r" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="JnM-Qc-OOr"/>
+                <constraint firstItem="Fzb-uk-Pet" firstAttribute="top" secondItem="u5P-JJ-JoI" secondAttribute="bottom" constant="16" id="LWj-9A-kL1"/>
                 <constraint firstItem="N1T-5s-vjV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="77" id="QZ8-uj-lBC"/>
                 <constraint firstItem="tX1-2E-weV" firstAttribute="top" secondItem="N1T-5s-vjV" secondAttribute="bottom" constant="27" id="SIP-fc-TqN"/>
                 <constraint firstItem="xmh-mc-zzu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Vq0-u3-c2d"/>
+                <constraint firstAttribute="trailing" secondItem="Fzb-uk-Pet" secondAttribute="trailing" constant="16" id="ZsC-Om-zr6"/>
                 <constraint firstItem="u5P-JJ-JoI" firstAttribute="top" secondItem="xBq-ly-VrO" secondAttribute="bottom" constant="16" id="aAp-co-YwV"/>
                 <constraint firstAttribute="trailing" secondItem="xBq-ly-VrO" secondAttribute="trailing" constant="16" id="agC-b4-kgV"/>
                 <constraint firstItem="u5P-JJ-JoI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="f7e-bw-M44"/>
                 <constraint firstItem="xBq-ly-VrO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="gcV-GE-K5k"/>
                 <constraint firstItem="xBq-ly-VrO" firstAttribute="top" secondItem="QLM-3O-oyG" secondAttribute="bottom" constant="16" id="irR-3B-4io"/>
                 <constraint firstAttribute="trailing" secondItem="tX1-2E-weV" secondAttribute="trailing" constant="16" id="lHA-Cm-eKG"/>
-                <constraint firstItem="xmh-mc-zzu" firstAttribute="top" secondItem="cJW-Zr-i9r" secondAttribute="bottom" constant="16" id="rg1-yd-SjU"/>
+                <constraint firstItem="Fzb-uk-Pet" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="uom-vS-86F"/>
                 <constraint firstItem="tX1-2E-weV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="uys-mo-f6B"/>
+                <constraint firstItem="xmh-mc-zzu" firstAttribute="top" secondItem="Fzb-uk-Pet" secondAttribute="bottom" constant="16" id="woP-5O-pzk"/>
             </constraints>
             <point key="canvasLocation" x="53.600000000000001" y="117.39130434782609"/>
         </view>
